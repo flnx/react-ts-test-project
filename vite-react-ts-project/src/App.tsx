@@ -1,9 +1,7 @@
-import { useState } from 'react';
+import Heading from './components/Heading';
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return <h1>Hello there</h1>;
+    return <Heading title={'Hello There!'} />;
 }
 
 export default App;
