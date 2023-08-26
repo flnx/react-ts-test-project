@@ -159,7 +159,7 @@ const initCartContextState: UseCartContextType = {
     cart: [],
 };
 
-export const CartContext = createContext<UseCartContextType>(initCartContextState)
+const CartContext = createContext<UseCartContextType>(initCartContextState)
 
 type ChildrenType = {
     children?: ReactElement | ReactElement[] 
@@ -172,3 +172,5 @@ export const CartProvider = ({ children }: ChildrenType): ReactElement => {
         </CartContext.Provider>
     );
 };
+
+export default CartContext;
